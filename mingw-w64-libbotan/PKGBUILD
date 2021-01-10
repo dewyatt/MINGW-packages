@@ -59,6 +59,7 @@ build() {
   MSYS2_ARG_CONV_EXCL="--prefix=;--libdir=;--bindir=" \
   ${MINGW_PREFIX}/bin/python configure.py \
     --disable-shared \
+    --without-os-feature=threads \
     --os=mingw \
     --cc=gcc \
     --prefix=${MINGW_PREFIX} \
